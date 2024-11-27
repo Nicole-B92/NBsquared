@@ -1,0 +1,258 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #FFCC00;
+}
+.text-center {
+    text-align: center;
+}
+.text-black {
+    color: #000000;
+}
+.font-bold {
+    font-weight: bold;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.section {
+    padding: 0 16px;
+}
+
+/* Navbar */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.logo {
+    height: 64px;
+}
+.nav-link {
+    margin: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.social-links {
+    margin: 5px;
+}
+
+.social-links img:hover {
+    transform: scale(1.25);
+}
+
+#tiktok-icon {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#tiktok-icon img:hover {
+    transform: scale(1.25);
+}
+
+/* Sections */
+.section {
+    padding: 0px 16px;
+    text-align: center;
+}
+.home, .about, .connect {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content #profile-picture {
+    width: 250px;
+    border-radius: 40%;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.home-content h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.home-content #nicole-b {
+    text-align: center;
+    font-style: italic;
+}
+
+.home-content p {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: justify;
+}
+
+.home-content #my-goal {
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    background-color: #F7F7F7;
+}
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    gap: 8rem;
+}
+.about-text {
+    max-width: 600px;
+    text-align: justify;
+}
+.about-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.about-text p {
+    font-size: 17px;
+}
+.about-box {
+    border: 2px solid #FFCC00;
+    background-color:#F7F7F7;
+    padding-bottom: 25px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 60px;
+}
+.about-box h2 {
+    font-size:36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.about-box p {
+    font-size: 17px;
+    margin: 8px 0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.about-box ul {
+    font-size: 17px;
+    margin: 8px 0;
+}
+.about-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+.about-box ul li::before {
+    content: "■";
+    color: #FFCC00;
+    margin-right: 8px;
+}
+
+/*Connect*/
+.connect-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom:20px;
+}
+.connect-content #enquiries {
+    line-height: 2px;
+}
+.connect-content #email {
+    font-weight: 700;
+    padding-bottom: 70px;
+}
+.connect-content #register {
+    padding-bottom: 30px;
+}
+.form-group {
+    display: flex;
+}
+.form-group input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 0.2rem;
+    margin: 0 0.5rem;
+    text-align:left;
+    outline: none;
+    width: 150px;
+}
+.form-group input:focus {
+    border-bottom: 2px solid #ffcc00;
+}
+.form-group input::placeholder {
+    color: #6c6c6c;
+    font-weight: 400;
+}
+.connect-content #submit-button {
+    border: 0;
+    background-color: transparent;
+}
+
+.connect-content #submit-button img:hover {
+    transform: scale(1.25);
+}
+
+/* Footer */
+footer {
+    background-color: #FAE57F;
+    padding: 1px;
+    text-align: center;
+    margin: 0;
+    font-family: "Barlow", serif;
+    font-style: normal;
+    color: #000000;
+}
