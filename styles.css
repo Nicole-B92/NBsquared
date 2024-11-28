@@ -152,7 +152,7 @@ header {
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: flex-start;
-    gap: 6rem;
+    gap: 3rem;
     margin:20px
 }
 .about-text {
@@ -178,6 +178,7 @@ header {
     padding-bottom: 25px;
     border-radius: 16px;
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     align-items: center;
 }
