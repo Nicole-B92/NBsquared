@@ -29,7 +29,9 @@ a:hover {
 .font-semibold {
     font-weight: 600;
 }
-
+section {
+    scroll-margin-top: 60px; 
+}
 /* Navbar */
 header {
     position: sticky;
