@@ -85,12 +85,12 @@ header {
     min-height: 90vh;
 }
 .h1 { 
-    text-wrap: nowrap;
     font-family: "Instrument Sans", sans-serif;
     font-size: 48px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 16px;
+    flex-wrap: none;
 }
 .h2 {
     text-wrap: nowrap;
