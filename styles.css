@@ -53,15 +53,17 @@ header {
     font-weight: 600;
     font-size: 16px;
 }
-
 .social-links {
     margin: 5px;
 }
-
+.social-links img {
+    width: auto;
+    height: auto;
+    transition: transform 0.3s
+}
 .social-links img:hover {
     transform: scale(1.25);
 }
-
 #tiktok-icon {
     margin-left: 10px;
     margin-right: 5px;
