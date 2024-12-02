@@ -56,6 +56,11 @@ header {
 .social-links {
     margin: 5px;
 }
+.social-links img {
+    max-height: 15px;
+    height: auto;
+    transition: transform 0.3s;
+}
 .social-links img:hover {
     transform: scale(1.25);
 }
