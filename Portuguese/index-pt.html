@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBsquared</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/Images/logo-icon-square.ico" type="image/x-icon">
+
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Transforme sua vida através de ensinamentos por Nicole B. Explore histórias, dicas, e conselhos para viver uma vida mais saudável e feliz." />
+    <meta name="keywords" content="saude bem-estar coach lifestyle estilo de vida" />
+    <meta name="author" content="Nicole Badotti" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Olá! Sou eu, Nicole B." />
+    <meta property="og:description" content="Transforme sua vida através de ensinamentos por Nicole B. Explore histórias, dicas, e conselhos para viver uma vida mais saudável e feliz." />
+    <meta property="og:image" content="https://nbsquared.co.uk/Images/nicole-b.png" />
+    <meta property="og:url" content="https://nbsquared.co.uk/" />
+
+    <!-- Instrument Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN32FTXPEP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CN32FTXPEP');
+    </script>
+
+    <!-- CSS external file -->
+    <link rel="stylesheet" href="/Portuguese/styles-pt.css">
+</header>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"> 
+                <a href="#home"><img src="/Images/logo-website.webp" alt="navbar logo"></a>
+            </div>
+
+            <div class="menu">
+                <a href="#home"><b>Home</b></a>
+                <a href="#sobre"><b>Sobre</b></a>
+                <a href="#contato"><b>Contato</b></a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@itsme.nicoleb" target="_blank">
+                    <img src="/Images/tiktok-icon.svg" alt="TikTok"></a>
+                <a href="https://www.instagram.com/itsme.nicole.b/" target="_blank">
+                    <img src="/Images/instagram-icon.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@itsme.nicoleb" target="_blank">
+                    <img src="/Images/youtube-icon.svg" alt="YouTube"></a>
+                <a href="https://www.facebook.com/nicole.badotti" target="_blank">
+                    <img src="/Images/facebook-icon.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank">
+                    <img src="/Images/linkedIn-icon.svg" alt="LinkedIn"></a>
+            </div>
+        
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#sobre" onclick="closeMenu()">Sobre</a>
+            <a href="#contato" onclick="closeMenu()">Contato</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-texto">
+            <img src="/Images/nicole-b.webp" alt="Profile Picture" id="profile-picture">
+            <h1>Olá! <br> Sou eu, Nicole B<span class="dot">.</span></h1>
+            <p>Como a mente e o coração por trás da NBsquared, sou uma defensora da Saúde & Bem-Estar, dedicada a melhorar a qualidade de vida tanto para mim quanto para os outros.</p>
+            <p>Minha jornada foi marcada por problemas de saúde que começaram na infância. Com o tempo, descobri que o caminho para o bem-estar vai além de buscar respostas em consultórios médicos, está em entender o impacto de nossos hábitos diários e nos comprometer a fazer escolhas melhores.</p>
+            <p>NBsquared é mais do que apenas uma plataforma de dicas e conselhos – é um espaço para aprendizado por meio de histórias. Acredito que pequenas mudanças podem levar a grandes conquistas, portanto estou animada para compartilhar as minhas rotinas e o que aprendi ao longo do caminho!</p>
+            <p class="chapter-end">Embora eu traga anos de experiência pessoal, eu me considero uma eterna aprendiz — sempre buscando conhecimento por meio de estudos ​​e fontes confiáveis ​​para trazer à você conteúdos informativos e interessantes.</p>
+            <h3>Meu objetivo?</h3>
+            <p id="goal">Inspirar e empoderar <b>você</b> a dar seus próprios passos em direção à uma vida mais saudável e feliz <b>também!</b></p>
+        </div>
+    </section>
+
+    <!-- Sobre section -->
+    <section id="sobre">
+        <div class="sobre-texto">
+            <h2>Sobre<span class="ponto">.</span></h2>
+            <p>Desde jovem, enfrentei uma série de dificuldades de saúde que tornaram cada dia em uma batalha. Meus pais e eu passamos incontáveis horas em consultas e exames médicos buscando respostas, muitas vezes sem sucesso. Esses desafios abalaram minha autoestima, deixando-me vulnerável e frustrada.</p>
+            <p>Com o tempo, comecei a reconhecer padrões nas minhas (re)ações e me tornei mais consciente dos perigos ocultos nos produtos do dia a dia — desde os cosméticos que usava,  aos alimentos que consumia e até mesmo os tecidos das roupas que vestia. Essa conscientização me motivou a repensar minhas rotinas e a minimizar a exposição a substâncias nocivas e, sempre que possível, evitá-las completamente. Que jornada tem sido!</p>
+            <p>Embora eu ainda conviva com algumas dessas condições, aprendi a lidar com elas de forma mais eficaz e a evitar possíveis gatilhos. Após anos de tentativa e erro, houveram melhorias significativas — uma verdadeira prova do poder da persistência e das mudanças intencionais no meu estilo de vida.</p>
+            <p>Meu objetivo é continuar aprendendo e aprimorando meus hábitos enquanto compartilho minha jornada com você, para que juntos possamos construir vidas mais saudáveis e felizes — um quadrado de cada vez.</p>
+        </div>
+
+        <div class="sobre-caixa">
+            <h3>Missão</h3>
+            <p>Melhorar vidas, um quadrado de cada vez.</p>
+            <h3>Visão</h3>
+            <p>Fazer do mundo um lugar mais saudável e feliz.</p>
+            <h3>Valores</h3>
+            <ul>
+                <li>Bem-Estar</li>
+                <li>Positividade</li>
+                <li>Creatividade</li>
+                <li>Longevidade</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contato section -->
+    <section id="contato">
+        <div class="contate-nos">
+            <h2>Entre em contato!</h2>
+            <p>Para todas as dúvidas, escreva para:</p>
+            <p><a href="mailto:info@nbsquared.co.uk"><b>info@nbsquared.co.uk</b></a>
+        </div>
+
+        <div class="formulario-grupo">
+            <p>Registre seu interesse:</p>
+            <form form action="https://formsubmit.co/08bdd7fdc6e3a3f2a8afb5e51dc3ba19" method="POST">
+                <input type="text" name="first_name" placeholder="Nome" required>
+                <input type="text" name="last_name" placeholder="Sobrenome" required>
+                <input type="email" name="email" placeholder="Endereço de email" required>
+                <button class="formulario-enviar" type="submit"><img src="/Images/submit-button.svg" alt="Enviar">
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-conteudo">
+            <p>&copy; 2024 NBsquared. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Popup -->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>Este site usa cookies para melhorar sua experiência.
+            <a id="saiba-mais" href="./cookies-pt.html">Saiba mais</a>
+        </p>
+        <button onclick="declineCookies()">Rejeitar</button>
+        <button onclick="acceptCookies()">Aceitar</button>
+    </div>
+
+    <!-- JavaScript external file -->
+    <script src="./script-pt.js"></script>
+</body>
+
+</html>

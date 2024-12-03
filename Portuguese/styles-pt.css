@@ -1,0 +1,381 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    scroll-margin-top: 60px;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFCC00;
+    cursor: cell;
+}
+
+.dot {
+    color: #FFCC00;
+}
+
+body {
+    font-family: "Barlow", serif;
+    font-size: 17px;
+}
+
+h1 { 
+    text-align: center;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+h2 { 
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.3;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: bold;
+    font-size:36px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p { 
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    color: black;
+}
+
+.logo {
+    max-width: 40px;
+    width: auto;
+    margin: 10px 0;
+}
+
+.menu {
+    /* Hidden on mobile */
+    display: none;
+    transform: translateX(30px)
+}
+
+.menu a {
+    color:black;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu a:hover {
+    color:#FFCC00;
+}
+
+.burger-menu {
+    font-size: 2rem;
+    cursor: cell;
+    position: relative;
+    top: -4px;
+    /* Display on mobile */
+    display: block;
+}
+
+#mobile-menu {
+    background-color: white;
+    border: 2px solid #ffcc00;
+    border-radius: 5%;
+    padding: 10px;
+    transform: translateY(5px);
+    top: 0;
+    right:0;
+    position: absolute;
+    top: 50px;
+    width: 30%;
+    z-index:1;
+    display: none;
+    text-align: center;
+}
+
+#mobile-menu a {
+    display: block;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#mobile-menu a:hover {
+    color: #FFCC00;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.social-links img {
+    height: 15px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.25);
+}
+
+/* Home section */
+.home-texto {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-texto #profile-picture {
+    width: 250px;
+    border-radius: 40%;
+}
+
+.home-texto p {
+    max-width: 700px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.chapter-end {
+    margin-bottom: 0;
+}
+
+.home-texto #goal {
+    border: 2px solid #FFCC00;
+    border-radius: 16px;
+    width:fit-content;
+    padding: 7px 10px 10px 10px;
+    text-align: center;
+    max-width: none;
+}
+
+/* About section */
+#sobre {
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #f7f7f7;
+    gap: 2rem;
+}
+
+.sobre-texto {
+    max-width: 650px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sobre-caixa {
+    width: 650px;
+    border: 2px solid #FFCC00;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.sobre-caixa p {
+    font-size: 17px;
+    margin: 8px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sobre-caixa ul {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+.sobre-caixa ul li:before {
+    content: "■";
+    color: #FFCC00;
+    margin-right: 8px;
+}
+
+/*Contact section*/
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 90vh;
+}
+
+.contate-nos h2 {
+    margin-bottom: 100px;
+}
+
+.formulario-grupo {
+    flex-direction: column;
+}
+
+.formulario-grupo p {
+    padding-bottom: 10px;
+}
+
+.formulario-grupo input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-align:left;
+    outline: none;
+    width: 165px;
+    display: flex;
+}
+
+.formulario-grupo input:focus {
+    border-bottom: 2px solid #ffcc00;
+}
+
+.formulario-grupo input::placeholder {
+    color: #6c6c6c;
+    font-weight: 400;
+}
+
+.formulario-enviar {
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.formulario-enviar img{
+    height: 20px;
+}
+
+.formulario-enviar img:hover {
+    transform: scale(1.25);
+}
+
+/* Footer */
+footer {
+    background-color: #FFCC00;
+    color: #000000;
+    padding: 10px;
+    font-size: small;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+  /* Cookie popup */
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.cookie-popup p {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.cookie-popup #saiba-mais {
+    color: white;
+    text-decoration: underline;
+}
+
+.cookie-popup #saiba-mais:hover {
+    color: #FFCC00;
+}
+
+.cookie-popup button {
+    padding: 10px;
+    background-color: #FFCC00;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: small;
+}
+
+.cookie-popup button:hover {
+    color: white;
+}
+
+  /* Responsive style - desktop */
+@media (min-width: 768px) {
+    .logo {
+    max-width: 60px;
+    }
+
+    .menu {
+    display: block;
+    }
+
+    .burger-menu {
+      /* Hidden on tablet and desktop */
+    display: none;
+    }
+
+    .social-links {
+      /* Horizontal layout on larger screens */
+    flex-direction: row;
+    align-items: center;
+    }
+}
