@@ -6,14 +6,10 @@
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    min-height: 100vh;
     padding: 20px;
-    scroll-margin-top: 60px;
     line-height: 1.6;
     max-width: 900px;
+    min-height: 100px;
 }
 
 html {
@@ -41,6 +37,7 @@ body {
     font-family: "Barlow", serif;
     font-size: 14px;
     background-color: #f7f7f7;
+    text-align: justify;
 }
 
 h1 { 
