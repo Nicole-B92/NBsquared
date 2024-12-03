@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Images/logo-favicon.ico" type="image/x-icon"> <!-- Working, but a bit squished-->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
     <title>NBsquared</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN32FTXPEP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-CN32FTXPEP');
-    </script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Images/logo-favicon.ico" type="image/x-icon">
 
     <!-- SEO Meta tags -->
     <meta name="description" content="Transform your life with health and wellness insights from Nicole B. Explore real stories, tips, and advice to live a healthier, happier life." />
-    <meta name="keywords" content="wellness coach health lifestyle" />
+    <meta name="keywords" content="health wellness coach lifestyle" />
     <meta name="author" content="Nicole Badotti" />
 
     <!-- Social Media Meta Tags -->
@@ -30,102 +22,140 @@
     <!-- Instrument Sans Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
     <!-- Barlow Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700" as="style">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN32FTXPEP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CN32FTXPEP');
+    </script>
+
+    <!-- CSS external file -->
+    <link rel="stylesheet" href="/styles.css">
+</header>
+
 <body>
     <!-- Navbar -->
     <header>
-        <div class="navbar">
-            <a href="#home">
-                <img src="/Images/logo-website.webp" alt="Navbar Logo" class="logo">
-            </a>
-            <nav>
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="https://www.tiktok.com/@itsme.nicoleb" class="social-links" target="_blank">
+        <nav class="navbar">
+            <div class="logo"> 
+                <a href="#home"><img src="/Images/logo-website.webp" alt="navbar logo"></a>
+            </div>
+
+            <div class="menu">
+                <a href="#home"><b>Home</b></a>
+                <a href="#about"><b>About</b></a>
+                <a href="#contact"><b>Contact</b></a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@itsme.nicoleb" target="_blank">
                     <img src="/Images/tiktok-icon.svg" alt="TikTok"></a>
-                <a href="https://www.instagram.com/itsme.nicole.b/" class="social-links" target="_blank">
+                <a href="https://www.instagram.com/itsme.nicole.b/" target="_blank">
                     <img src="/Images/instagram-icon.svg" alt="Instagram"></a>
-                <a href="https://www.youtube.com/@itsme.nicoleb" class="social-links" target="_blank">
+                <a href="https://www.youtube.com/@itsme.nicoleb" target="_blank">
                     <img src="/Images/youtube-icon.svg" alt="YouTube"></a>
-                <a href="https://www.facebook.com/nicole.badotti" class="social-links" target="_blank">
+                <a href="https://www.facebook.com/nicole.badotti" target="_blank">
                     <img src="/Images/facebook-icon.svg" alt="Facebook"></a>
-                <a href="https://www.linkedin.com/in/nicolebadotti/" class="social-links" target="_blank">
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank">
                     <img src="/Images/linkedIn-icon.svg" alt="LinkedIn"></a>
-            </nav>
+            </div>
+        
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
         </div>
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="section home">
-        <div class="home-content">
-            <img src="/Images/nicole-b.webp" alt="Profile picture" id="profile-picture">
+    <section id="home">
+        <div class="home-text">
+            <img src="/Images/nicole-b.webp" alt="Profile Picture" id="profile-picture">
             <h1>Hello! <br> It's me, Nicole B<span class="dot">.</span></h1>
-            <p id="nicole-b">As the heart and mind behind NBsquared, I am a Health & Wellness advocate, dedicated to improving the quality of life for myself and others.</p>
+            <p>As the heart and mind behind NBsquared, I am a Health & Wellness advocate, dedicated to improving the quality of life for myself and others.</p>
             <p>My journey has been shaped by personal health challenges that began in childhood. Over the years, I’ve learned that the path to wellness isn’t about seeking all answers in a doctor’s office, but understanding the impact of our daily habits and committing to smarter, more intentional decisions.</p>
             <p>NBsquared is more than just a platform for tips and advice — it’s a space for learning through storytelling. I believe that small changes can lead to great successes, so I am excited to share my routines and what I’ve learned along the way!</p>
             <p>While I bring years of personal experience, I consider myself a lifelong learner — always seeking knowledge from reputable studies and trusted sources to bring you informed, valuable content.</p>
             <h3>My goal?</h3>
-            <p id="my-goal">To inspire and empower <span class="bold">you</span> to take your own steps towards a healthier, happier life, too!</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>About<span class="dot">.</span></h2>
-                <p>Since I was young, I’ve faced a series of health challenges that turned everyday life into a constant battle. My parents and I spent countless hours in consultations and tests, searching for answers that often seemed out of reach. These challengers chipped away at my self-esteem, leaving me feeling vulnerable and frustrated.</p>
-                <p>Over time, I began to recognise patterns in my (re)actions and became increasingly aware of the hidden dangers in everyday products — from the cosmetics I used to the food I ate and even the fabrics I wore. This awareness motivated me to rethink my routines, and to minimise exposure to harmful substances, and, wherever possible, stay away from them entirely. What a journey it’s been!</p>
-                <p>Although I might still suffer from some of these conditions, I’ve learned how to manage them more effectively and avoid potential triggers. After years of trial and error, I’ve experienced meaningful improvements — a true testament to the power of persistence and intentional lifestyle changes.</p>
-                <p>My goal is to keep learning and refining my habits while sharing my journey with you. so together we can build healthier, happier lives — one square at a time.</p>
-            </div>
-            <div class="about-box">
-                <h3>Mission</h3>
-                <p>To improve lives, one square at a time.</p>
-                <h3>Vision</h3>
-                <p>To make the world a healthier, happier place.</p>
-                <h3>Core Values</h3>
-                <ul>
-                    <li>Positivity</li>
-                    <li>Wellbeing</li>
-                    <li>Creativity</li>
-                    <li>Longevity</li>
-                </ul>
-            </div>
+            <p id="goal">To inspire and empower <b>you</b> to take your own steps towards a healthier, happier life, <b>too!</b></p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="contact-content">
+    <!-- About section -->
+    <section id="about">
+        <div class="about-text">
+            <h2>About<span class="dot">.</span></h2>
+            <p>Since I was young, I’ve faced a series of health challenges that turned everyday life into a constant battle. My parents and I spent countless hours in consultations and tests, searching for answers that often seemed out of reach. These challengers chipped away at my self-esteem, leaving me feeling vulnerable and frustrated.</p>
+            <p>Over time, I began to recognise patterns in my (re)actions and became increasingly aware of the hidden dangers in everyday products — from the cosmetics I used to the food I ate and even the fabrics I wore. This awareness motivated me to rethink my routines, and to minimise exposure to harmful substances, and, wherever possible, stay away from them entirely. What a journey it’s been!</p>
+            <p>Although I might still suffer from some of these conditions, I’ve learned how to manage them more effectively and avoid potential triggers. After years of trial and error, I’ve experienced meaningful improvements — a true testament to the power of persistence and intentional lifestyle changes.</p>
+            <p>My goal is to keep learning and refining my habits while sharing my journey with you. so together we can build healthier, happier lives — one square at a time.</p>
+        </div>
+
+        <div class="about-box">
+            <h3>Mission</h3>
+            <p>To improve lives, one square at a time.</p>
+            <h3>Vision</h3>
+            <p>To make the world a healthier, happier place.</p>
+            <h3>Core Values</h3>
+            <ul>
+                <li>Positivity</li>
+                <li>Wellbeing</li>
+                <li>Creativity</li>
+                <li>Longevity</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="contact-us">
             <h2>Get in touch!</h2>
-            <p id="enquiries">For all general enquiries, please email:</p>
-            <p id="email"><a href="mailto:info@nbsquared.co.uk">info@nbsquared.co.uk</a>
-            <p id="register">Register your interest:</p>
+            <p>For all general enquiries, please email:</p>
+            <p><a href="mailto:info@nbsquared.co.uk"><b>info@nbsquared.co.uk</b></a>
+        </div>
+
+        <div class="form-group">
+            <p>Register your interest:</p>
             <form form action="https://formsubmit.co/08bdd7fdc6e3a3f2a8afb5e51dc3ba19" method="POST">
-            <div class="form-group">
                 <input type="text" name="first_name" placeholder="First Name" required>
                 <input type="text" name="last_name" placeholder="Last Name" required>
                 <input type="email" name="email" placeholder="Email address" required>
-                <button id="submit-button" type="submit">
-                    <img src="/Images/submit-button.svg" alt="Submit">
+                <button class="form-submit" type="submit"><img src="/Images/submit-button.svg" alt="Submit">
                 </button>
-                </div>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
+        <div class="footer-content">
             <p>&copy; 2024 NBsquared. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Cookie Popup -->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>This website uses cookies to ensure you get the best experience.
+            <a id="learn-more" href="./cookies.html">Learn more</a>
+        </p>
+        <button onclick="declineCookies()">Decline</button>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+
+    <!-- JavaScript external file -->
+    <script src="./script.js"></script>
 </body>
+
 </html>
