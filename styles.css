@@ -95,7 +95,7 @@ header {
 }
 
 .logo {
-    max-width: 50px;
+    max-width: 40px;
     width: auto;
     margin: 10px 0;
 }
@@ -118,7 +118,7 @@ header {
 }
 
 .burger-menu {
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: cell;
     position: relative;
     top: -4px;
@@ -355,6 +355,10 @@ footer p {
 
   /* Responsive style - desktop */
 @media (min-width: 768px) {
+    .logo {
+    max-width: 60px;
+    }
+
     .menu {
     display: block;
     }
