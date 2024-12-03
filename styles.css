@@ -153,6 +153,14 @@ header {
     color: #FFCC00;
 }
 
+.flag {
+    max-width: 30px;
+}
+
+.flag:hover {
+    transform: scale(1.25);
+}
+
 .social-links {
     display: flex;
     flex-direction: row;

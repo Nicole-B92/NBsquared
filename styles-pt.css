@@ -153,6 +153,14 @@ header {
     color: #FFCC00;
 }
 
+.flag {
+    max-width: 30px;
+}
+
+.flag:hover {
+    transform: scale(1.25);
+}
+
 .social-links {
     display: flex;
     flex-direction: row;
@@ -169,19 +177,19 @@ header {
 }
 
 /* Home section */
-.home-texto {
+.inicio-texto {
     display: flex;
     justify-self: center;
     align-items: center;
     flex-direction: column;
 }
 
-.home-texto #profile-picture {
+.inicio-texto #profile-picture {
     width: 250px;
     border-radius: 40%;
 }
 
-.home-texto p {
+.inicio-texto p {
     max-width: 700px;
     margin-left: 30px;
     margin-right: 30px;
@@ -192,7 +200,7 @@ header {
     margin-bottom: 0;
 }
 
-.home-texto #goal {
+.inicio-texto #goal {
     border: 2px solid #FFCC00;
     border-radius: 16px;
     width:fit-content;

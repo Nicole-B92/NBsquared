@@ -39,7 +39,7 @@
     </script>
 
     <!-- CSS external file -->
-    <link rel="stylesheet" href="/Portuguese/styles-pt.css">
+    <link rel="stylesheet" href="/styles-pt.css">
 </header>
 
 <body>
@@ -47,11 +47,11 @@
     <header>
         <nav class="navbar">
             <div class="logo"> 
-                <a href="#home"><img src="/Images/logo-website.webp" alt="navbar logo"></a>
+                <a href="#inicio"><img src="/Images/logo-website.webp" alt="navbar logo"></a>
             </div>
 
             <div class="menu">
-                <a href="#home"><b>Home</b></a>
+                <a href="#inicio"><b>Início</b></a>
                 <a href="#sobre"><b>Sobre</b></a>
                 <a href="#contato"><b>Contato</b></a>
             </div>
@@ -73,15 +73,19 @@
         </nav>
 
         <div id="mobile-menu" class="mobile-menu">
-            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#inicio" onclick="closeMenu()">Início</a>
             <a href="#sobre" onclick="closeMenu()">Sobre</a>
             <a href="#contato" onclick="closeMenu()">Contato</a>
+            <a href="/index.html" onclick="closeMenu()">
+                <img class="flag" src="/Images/uk-flag.svg" alt="english UK"></a>
+            <a href="/index-pt.html" onclick="closeMenu()">
+                <img class="flag" src="/Images/br-flag.svg" alt="portuguese BR"></a>
         </div>
     </header>
 
     <!-- Home Section -->
-    <section id="home">
-        <div class="home-texto">
+    <section id="inicio">
+        <div class="inicio-texto">
             <img src="/Images/nicole-b.webp" alt="Profile Picture" id="profile-picture">
             <h1>Olá! <br> Sou eu, Nicole B<span class="dot">.</span></h1>
             <p>Como a mente e o coração por trás da NBsquared, sou uma defensora da Saúde & Bem-Estar, dedicada a melhorar a qualidade de vida tanto para mim quanto para os outros.</p>
@@ -155,7 +159,7 @@
     </div>
 
     <!-- JavaScript external file -->
-    <script src="./script-pt.js"></script>
+    <script src="/script-pt.js"></script>
 </body>
 
 </html>
