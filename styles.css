@@ -188,6 +188,10 @@ header {
     text-align: justify;
 }
 
+.chapter-end {
+    margin-bottom: 0;
+}
+
 .home-text #goal {
     border: 2px solid #FFCC00;
     border-radius: 16px;
