@@ -296,6 +296,11 @@ header {
     border-bottom: 2px solid #ffcc00;
 }
 
+.formulario-grupo input:hover {
+    border-bottom: 1px solid #ffcc00;
+    cursor: text;
+}
+
 .formulario-grupo input::placeholder {
     color: #6c6c6c;
     font-weight: 400;

@@ -295,6 +295,11 @@ header {
     border-bottom: 2px solid #ffcc00;
 }
 
+.form-group input:hover {
+    border-bottom: 1px solid #ffcc00;
+    cursor: text;
+}
+
 .form-group input::placeholder {
     color: #6c6c6c;
     font-weight: 400;
