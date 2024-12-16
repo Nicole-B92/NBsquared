@@ -15,7 +15,7 @@ function closeMenu() {
 }
 
   // Cookie popup
-function acceptCookies() {
+function allConsentGranted() {
     document.getElementById("cookie-popup").style.display = "none";
 }
 
