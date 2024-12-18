@@ -190,6 +190,18 @@
             'analytics_storage': 'granted'
         });
         }
+
+        function setConsent(consent) {
+            const consentMode = {
+                'functionality_storage': consent.necessary ? 'granted' : 'denied',
+                'security_storage': consent.necessary ? 'granted' : 'denied',
+                'ad_storage': consent.marketing ? 'granted' : 'denied',
+                'analytics_storage': consent.analytics ? 'granted' : 'denied',
+                'personalization_storage': consent.preferences ? 'granted' : 'denied',
+            };
+            gtag('consent', 'update', consent);
+            localStorage.setItem('consentMode', JSON.stringfy(consentMode));
+        }
     </script>
 
     <div id="cookie-popup" class="cookie-popup">
