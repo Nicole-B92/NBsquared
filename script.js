@@ -6,6 +6,16 @@ gtag('consent', 'default', {
   'analytics_storage': 'denied'
 });
 
+//V2
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'region': ['ES', 'US-AK']
+});
+
+gtag('consent', 'default', {
+  'ad_storage': 'denied'
+});
+
 // Mobile menu toggle
 function toggleMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
