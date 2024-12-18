@@ -19,6 +19,6 @@ function allConsentGranted() {
     document.getElementById("cookie-popup").style.display = "none";
 }
 
-function declineCookies() {
+function allConsentDenied() {
     document.getElementById("cookie-popup").style.display = "none";
 }
