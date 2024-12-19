@@ -22,20 +22,27 @@ const acceptAllButtonInModal = document.getElementById("preference-accept-all");
 const preferenceModal = document.getElementById('preference-modal');
 const savePreferencesButton = document.getElementById('save-preferences');
 
+if (localStorage.getItem('cookieBannerDismissed') !== 'true') {
+  showCookieBanner(); 
+}
+
 // Function to show the cookie banner
 function showCookieBanner() {
   cookieBanner.style.display = 'flex';
+  localStorage.setItem('cookieBannerDismissed', 'true');
 }
 
 // Function to show the preference modal
 function showPreferenceModal() {
   preferenceModal.style.display = 'flex';
   cookieBanner.style.display = 'none'; // Hide the banner
+  localStorage.setItem('cookieBannerDismissed', 'true');
 }
 
 // Function to hide the preference modal
 function hidePreferenceModal() {
   preferenceModal.style.display = 'none';
+  localStorage.setItem('cookieBannerDismissed', 'true');
 }
 
 // Function to handle cookie acceptance (replace with your actual cookie logic)
@@ -68,6 +75,7 @@ managePreferencesButton.addEventListener('click', showPreferenceModal);
 acceptAllButton.addEventListener('click', acceptCookies);
 acceptAllButtonInModal.addEventListener("click", acceptCookies); 
 savePreferencesButton.addEventListener('click', () => {
+
   // Get user preferences
   const performanceCookie = document.getElementById('performance').checked;
   const functionalCookie = document.getElementById('functional').checked;
