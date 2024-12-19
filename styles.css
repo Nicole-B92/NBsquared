@@ -470,6 +470,7 @@ footer p {
     background-color: transparent;
     color: black;
     border: 1px solid #FFCC00;
+    margin-bottom: 10px;
 }
 
 #save-preferences:hover {
