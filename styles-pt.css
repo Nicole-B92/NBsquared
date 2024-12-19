@@ -335,7 +335,7 @@ footer p {
 }
 
   /* Cookie popup */
-.cookie-popup {
+.cookie-banner {
     position: fixed;
     bottom: 0;
     background-color: #333;
@@ -345,12 +345,13 @@ footer p {
     display: flex; 
     justify-content: center;
     align-items: center;
-    font-size: small;
+    z-index: 9999;
 }
 
-.cookie-popup p {
-    margin-right: 10px;
-    margin-bottom: 0;
+.cookie-banner p {
+    margin: 10px 10px;
+    font-size: 16px;
+    text-align: justify;
 }
 
 .cookie-popup #saiba-mais {
@@ -358,21 +359,149 @@ footer p {
     text-decoration: underline;
 }
 
-.cookie-popup #saiba-mais:hover {
+.cookie-banner p {
+    margin: 10px 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.cookie-banner #saiba-mais {
+    color: white;
+    text-decoration: underline;
+}
+
+.cookie-banner #saiba-mais:hover {
     color: #FFCC00;
 }
 
-.cookie-popup button {
-    padding: 10px;
-    background-color: #FFCC00;
-    color: black;
+.cookie-banner button {
+    text-wrap: nowrap;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
-    font-size: small;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
-.cookie-popup button:hover {
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+#accept-all {
+    padding: 10px 10px;
+    background-color: #FFCC00;
+    color: black;
+}
+
+#accept-all:hover {
+    color: white;
+}
+
+#customise {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+#customise:hover {
+    color: #FFCC00;
+}
+
+#preference-modal {
+    position:fixed;
+    top: 0;
+    left: 5%;
+    transform: translateY(250px);
+    width: 90%;
+    height: 50vh;
+    background-color: white;
+    border: 2px solid #FFCC00;;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 20px;
+    z-index: 10000; /* Ensure modal is on top */
+    display: none;
+    font-size: 16px;
+}
+
+#preference-modal h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#preference-modal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#preference-modal li {
+    margin-bottom: 10px;
+}
+
+#preference-modal input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#preference-modal input{
+    float: right;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#preference-modal label span {
+    font-style: italic;
+    color: #aaa;
+}
+
+#preference-modal a {
+    color: black;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#preference-modal a:hover {
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+#save-preferences {
+    text-wrap: nowrap;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #FFCC00;
+    transform: translateY(15px);
+}
+
+#save-preferences:hover {
+    color: white;
+}
+
+#preference-accept-all {
+    text-wrap: nowrap;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #FFCC00;
+    color: black;
+}
+
+#preferences-accept-all:hover {
     color: white;
 }
 
@@ -399,5 +528,19 @@ footer p {
       /* Horizontal layout on larger screens */
     flex-direction: row;
     align-items: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #preference-modal {
+        width: 40%;
+        left:30%;
+    }
+
+    #save-preferences {
+        transform: translateY(25px);
     }
 }

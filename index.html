@@ -179,37 +179,41 @@
         } else {
             gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
         }
-        </script>
-
-    <script>
-        function allConsentGranted() {
-        gtag('consent', 'update', {
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
-            'ad_storage': 'granted',
-            'analytics_storage': 'granted'
-        });
-        }
-
-        function setConsent(consent) {
-            const consentMode = {
-                'functionality_storage': consent.necessary ? 'granted' : 'denied',
-                'security_storage': consent.necessary ? 'granted' : 'denied',
-                'ad_storage': consent.marketing ? 'granted' : 'denied',
-                'analytics_storage': consent.analytics ? 'granted' : 'denied',
-                'personalization_storage': consent.preferences ? 'granted' : 'denied',
-            };
-            gtag('consent', 'update', consent);
-            localStorage.setItem('consentMode', JSON.stringfy(consentMode));
-        }
     </script>
 
-    <div id="cookie-popup" class="cookie-popup">
-        <p>This website uses cookies to ensure you get the best experience.
-            <a id="learn-more" href="/cookies.html" target="_blank">Learn more</a>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>This website uses cookies to ensure you get the best experience. By continuing to browse, you accept all cookies. To manage your preferences, click "Customise". You can change your mind at any time.
+            <a id="learn-more" href="./cookies.html" target="_blank">Learn more</a>
         </p>
-        <button onclick="allConsentDenied()">Decline</button>
-        <button onclick="allConsentGranted()">Accept</button>
+        <div class="buttons">
+            <button id="accept-all">Accept All</button>
+            <button id="customise">Customise</button>
+        </div>
+    </div>
+
+    <div id="preference-modal" style="display: none;">
+        <h2>Privacy Preferences</h2>
+        <ul>
+            <li>
+                <label for="required">Required Cookies</label>
+                <input type="checkbox" checked disabled id="stricly-necessary">
+            </li>
+            <li>
+                <label for="performance">Performance Cookies</label>
+                <input type="checkbox" id="performance">
+            </li>
+            <li>
+                <label for="functional">Functional Cookies</label>
+                <input type="checkbox" id="functional">
+            </li>
+            <li>
+                <label for="targeting">Targeting Cookies</label>
+                <input type="checkbox" id="targeting">
+            </li>
+        </ul>
+        <a href="./cookies.html" target="_blank">Learn more</a>
+        <button id="save-preferences">Save Preferences</button>
+        <button id="preference-accept-all">Accept All</button>
     </div>
 
     <!-- JavaScript external file -->
