@@ -470,7 +470,6 @@ footer p {
     background-color: transparent;
     color: black;
     border: 1px solid #FFCC00;
-    transform: translateY(15px);
 }
 
 #save-preferences:hover {
