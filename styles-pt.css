@@ -484,6 +484,7 @@ footer p {
     color: black;
     border: 1px solid #FFCC00;
     transform: translateY(15px);
+    margin-bottom: 10px;
 }
 
 #save-preferences:hover {
