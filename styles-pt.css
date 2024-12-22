@@ -541,5 +541,6 @@ footer p {
 
     #save-preferences {
         transform: translateY(25px);
+        margin-bottom: 5px;
     }
 }
