@@ -27,6 +27,10 @@ a:hover {
     cursor: cell;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 .dot {
     color: #FFCC00;
 }
