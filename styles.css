@@ -470,6 +470,7 @@ footer p {
     background-color: transparent;
     color: black;
     border: 1px solid #FFCC00;
+    margin-right: 5px;
 }
 
 #save-preferences:hover {
@@ -485,6 +486,7 @@ footer p {
     border-radius: 5px;
     background-color: #FFCC00;
     color: black;
+    border: 1px solid #FFCC00;
 }
 
 #preference-accept-all:hover {
@@ -524,10 +526,5 @@ footer p {
     #preference-modal {
         width: 40%;
         left:30%;
-    }
-
-    #save-preferences {
-        transform: translateY(25px);
-        margin-bottom: 5px;
     }
 }
