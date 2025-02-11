@@ -496,7 +496,7 @@ footer p {
   /* Responsive style - desktop */
 @media (min-width: 768px) {
     .logo {
-    max-width: 60px;
+    max-width: 70px;
     }
 
     .menu {
