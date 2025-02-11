@@ -194,9 +194,9 @@ header {
 }
 
 .home-text p {
-    max-width: 700px;
-    margin-left: 30px;
-    margin-right: 30px;
+    max-width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: justify;
 }
 
@@ -527,7 +527,7 @@ footer p {
     }
 
     .home-text p {
-    max-width: 650px;
+    max-width: 700px;
     }
 
     #preference-modal {
