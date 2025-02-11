@@ -522,6 +522,10 @@ footer p {
         flex-wrap: nowrap;
     }
 
+    .home-text p {
+        max-width: 650px;
+    }
+
     #preference-modal {
         width: 40%;
         left:30%;
