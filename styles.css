@@ -32,12 +32,12 @@ a:link {
 }
 
 a:hover {
-    color: #FFCC00;
+    color: #F9CF04;
     cursor: cell;
 }
 
 .dot {
-    color: #FFCC00;
+    color: #F9CF04;
 }
 
 body {
@@ -113,7 +113,7 @@ header {
 }
 
 .menu a:hover {
-    color:#FFCC00;
+    color:#F9CF04;
 }
 
 .burger-menu {
@@ -127,7 +127,7 @@ header {
 
 #mobile-menu {
     background-color: white;
-    border: 2px solid #ffcc00;
+    border: 2px solid #F9CF04;
     border-radius: 5%;
     padding: 10px;
     transform: translateY(5px);
@@ -149,7 +149,7 @@ header {
 }
 
 #mobile-menu a:hover {
-    color: #FFCC00;
+    color: #F9CF04;
 }
 
 .flag {
@@ -205,7 +205,7 @@ header {
 }
 
 .home-text #goal {
-    border: 2px solid #FFCC00;
+    border: 2px solid #F9CF04;
     border-radius: 16px;
     width:fit-content;
     padding: 7px 10px 10px 10px;
@@ -230,7 +230,7 @@ header {
 
 .about-box {
     width: 650px;
-    border: 2px solid #FFCC00;
+    border: 2px solid #F9CF04;
     padding-bottom: 30px;
     border-radius: 16px;
     margin-left: 20px;
@@ -252,7 +252,7 @@ header {
 
 .about-box ul li:before {
     content: "■";
-    color: #FFCC00;
+    color: #F9CF04;
     margin-right: 8px;
 }
 
@@ -291,11 +291,11 @@ header {
 }
 
 .form-group input:focus {
-    border-bottom: 2px solid #ffcc00;
+    border-bottom: 2px solid #F9CF04;
 }
 
 .form-group input:hover {
-    border-bottom: 1px solid #ffcc00;
+    border-bottom: 1px solid #F9CF04;
     cursor: text;
 }
 
@@ -320,7 +320,7 @@ header {
 
 /* Footer */
 footer {
-    background-color: #FFCC00;
+    background-color: #F9CF04;
     color: #000000;
     padding: 10px;
     font-size: small;
@@ -358,7 +358,7 @@ footer p {
 }
 
 .cookie-banner #learn-more:hover {
-    color: #FFCC00;
+    color: #F9CF04;
 }
 
 .cookie-banner button {
@@ -379,7 +379,7 @@ footer p {
 
 #accept-all {
     padding: 10px 13px;
-    background-color: #FFCC00;
+    background-color: #F9CF04;
     color: black;
 }
 
@@ -394,7 +394,7 @@ footer p {
 }
 
 #customise:hover {
-    color: #FFCC00;
+    color: #F9CF04;
 }
 
 #preference-modal {
@@ -405,7 +405,7 @@ footer p {
     width: 90%;
     height: 50vh;
     background-color: white;
-    border: 2px solid #FFCC00;;
+    border: 2px solid #F9CF04;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -455,7 +455,7 @@ footer p {
 }
 
 #preference-modal a:hover {
-    color: #FFCC00;
+    color: #F9CF04;
     cursor: pointer;
 }
 
@@ -468,7 +468,7 @@ footer p {
     border-radius: 5px;
     background-color: transparent;
     color: black;
-    border: 1px solid #FFCC00;
+    border: 1px solid #F9CF04;
     margin-right: 5px;
 }
 
@@ -483,9 +483,9 @@ footer p {
     cursor: pointer;
     font-size: 14px;
     border-radius: 5px;
-    background-color: #FFCC00;
+    background-color: #F9CF04;
     color: black;
-    border: 1px solid #FFCC00;
+    border: 1px solid ##F9CF04;
 }
 
 #preference-accept-all:hover {
