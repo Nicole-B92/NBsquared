@@ -41,13 +41,13 @@ a:hover {
 }
 
 body {
-    font-family: "Barlow", serif;
+    font-family: "Instrumental Sans", sans-serif;
     font-size: 17px;
 }
 
 h1 { 
     text-align: center;
-    font-family: "Instrument Sans", sans-serif;
+    font-family: "Poppins", serif;
     font-size: 50px;
     font-weight: bold;
     margin-top: 20px;
@@ -66,8 +66,7 @@ h2 {
 
 h3 {
     text-align: center;
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: bold;
+    font-family: "DM Serif Display", serif;
     font-size:36px;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -95,7 +94,7 @@ header {
 }
 
 .logo {
-    max-width: 40px;
+    max-width: 45px;
     width: auto;
     margin: 10px 0;
 }
