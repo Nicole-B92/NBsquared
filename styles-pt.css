@@ -48,7 +48,7 @@ body {
 h1 { 
     text-align: center;
     font-family: "Poppins", serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -516,31 +516,35 @@ footer p {
     }
 
     .language {
-        display: flex;
-        }
+    display: flex;
+    }
 
     .burger-menu {
-      /* Hidden on tablet and desktop */
+    /* Hidden on tablet and desktop */
     display: none;
     }
 
     .social-links {
-      /* Horizontal layout on larger screens */
+    /* Horizontal layout on larger screens */
     flex-direction: row;
     align-items: center;
     }
 
     .buttons {
-        display: flex;
-        flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    }
+
+    h1 {
+    font-size: 50px;
     }
 
     .home-text p {
-        max-width: 650px;
+    max-width: 650px;
     }
 
     #preference-modal {
-        width: 40%;
-        left:30%;
+    width: 40%;
+    left:30%;
     }
 }
