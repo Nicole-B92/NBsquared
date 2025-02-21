@@ -47,14 +47,14 @@ a:hover {
 }
 
 body {
-    font-family: "Instrumental Sans", sans-serif;
-    font-size: 17px;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 16px;
 }
 
 h1 { 
     text-align: center;
     font-family: "Poppins", serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -63,7 +63,7 @@ h1 {
 
 h2 { 
     font-family: "Poppins", serif;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
@@ -79,7 +79,7 @@ h3 {
 }
 
 p { 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 header {
@@ -100,7 +100,7 @@ header {
 }
 
 .logo {
-    max-width: 45px;
+    max-width: 40px;
     width: auto;
     margin: 10px 0;
 }
