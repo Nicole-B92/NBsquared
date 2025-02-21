@@ -237,6 +237,10 @@ header {
     transform: scale(1.15);
 }
 
+.product-button {
+    vertical-align: baseline;
+}
+
 /* Footer */
 footer {
     background-color: #F9CF04;
@@ -444,9 +448,5 @@ footer p {
     #preference-modal {
         width: 40%;
         left:30%;
-    }
-
-    #skincarebeauty img{
-    max-width: 200px;
     }
 }
