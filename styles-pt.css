@@ -91,6 +91,8 @@ header {
     align-items: center;
     justify-content:space-evenly;
     color: black;
+    max-width: 1200px;
+    height: 94px;
 }
 
 .logo {
@@ -119,7 +121,7 @@ header {
     font-size: 2rem;
     cursor: cell;
     position: relative;
-    top: -4px;
+    top: -3px;
     /* Display on mobile */
     display: block;
 }
@@ -172,11 +174,6 @@ header {
 
 .social-links img:hover {
     transform: scale(1.25);
-}
-
-.language {
-    /* Hidden on mobile */
-    display: none;
 }
 
 /* Home section */
