@@ -213,7 +213,6 @@ header {
     font-size: 20px;
 }
 
-/*Beauty section*/
 .product-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -221,31 +220,9 @@ header {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-}
-
-#beauty img{
-    width: 110px;
-    justify-items: center;
-}
-
-#beauty img:hover{
-    transform: scale(1.15);
-}
-
-.product-button {
-    vertical-align: baseline;
 }
 
 /*Skincare section*/
-.product-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
 #skincare img{
     width: 110px;
     justify-items: center;
@@ -259,22 +236,41 @@ header {
     vertical-align: baseline;
 }
 
-/*Haircare section*/
-.product-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
+/*Beauty section*/
+#beauty img{
+    width: 110px;
+    justify-items: center;
 }
 
+#beauty img:hover{
+    transform: scale(1.15);
+}
+
+.product-button {
+    vertical-align: baseline;
+}
+
+/*Haircare section*/
 #haircare img{
     width: 110px;
     justify-items: center;
 }
 
 #haircare img:hover{
+    transform: scale(1.15);
+}
+
+.product-button {
+    vertical-align: baseline;
+}
+
+/*Personal Care section*/
+#personalcare img{
+    width: 110px;
+    justify-items: center;
+}
+
+#personalcare img:hover{
     transform: scale(1.15);
 }
 
