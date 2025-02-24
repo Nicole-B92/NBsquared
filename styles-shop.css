@@ -97,10 +97,11 @@ header {
     align-items: center;
     justify-content:space-evenly;
     color: black;
+    max-width: 1200px;
 }
 
 .logo {
-    max-width: 40px;
+    max-width: 45px;
     width: auto;
     margin: 10px 0;
 }
@@ -178,11 +179,6 @@ header {
 
 .social-links img:hover {
     transform: scale(1.25);
-}
-
-.language {
-    /* Hidden on mobile */
-    display: none;
 }
 
 /*Shop section*/
