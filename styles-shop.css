@@ -108,7 +108,6 @@ header {
 .menu {
     /* Hidden on mobile */
     display: none;
-    transform: translateX(45px)
 }
 
 .menu a {

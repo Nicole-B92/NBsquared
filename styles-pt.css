@@ -42,7 +42,7 @@ a:hover {
 
 body {
     font-family: "Instrumental Sans", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 h1 { 
@@ -102,7 +102,6 @@ header {
 .menu {
     /* Hidden on mobile */
     display: none;
-    transform: translateX(45px)
 }
 
 .menu a {
