@@ -236,20 +236,6 @@ header {
     vertical-align: baseline;
 }
 
-/*Beauty section*/
-#beauty img{
-    width: 110px;
-    justify-items: center;
-}
-
-#beauty img:hover{
-    transform: scale(1.15);
-}
-
-.product-button {
-    vertical-align: baseline;
-}
-
 /*Haircare section*/
 #haircare img{
     width: 110px;
