@@ -274,15 +274,28 @@ header {
     text-align: justify;
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
 #categories {
     display: flex;
 }
 
 .category img{
-    max-width: 110px;
-    margin-top: 40px;
+    width: 90px;
+    margin-top: 20px;
     margin: 10px;
     border-radius: 40%;
+}
+
+.category img:hover{
+    border: 2px solid #F9CF04;
 }
 
 .category a{
@@ -566,9 +579,18 @@ footer p {
     }
 
     .category img{
-        max-width: 200px;
+        width: 200px;
         margin-top: 40px;
         margin: 20px;
         border-radius: 40%;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
     }
 }
