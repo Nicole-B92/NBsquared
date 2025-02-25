@@ -25,6 +25,12 @@ html {
     scroll-behavior: smooth;
 }
 
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 a:link {
     color: black;
     background-color: transparent;
@@ -133,7 +139,7 @@ header {
     top: 0;
     right:0;
     position: absolute;
-    top: 50px;
+    top: 65px;
     width: 30%;
     z-index:1;
     display: none;
@@ -272,15 +278,15 @@ header {
 
 .product-grid {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
     max-width: 900px;
-    margin: 30px auto;
-    padding: 10px;
+    margin-top: 40px;
+    padding: 20px;
 }
 
 #categories {
-    display: flex;
+    display: none;
 }
 
 .category img{
@@ -586,6 +592,10 @@ footer p {
     left:30%;
     }
 
+    #categories {
+        display: none;
+    }
+
     .category img{
         width: 200px;
         margin-top: 20px;
@@ -593,9 +603,35 @@ footer p {
         border-radius: 40%;
     }
 
+    #pele img{
+        width: 150px;
+    }
+
+    #cabelo img{
+        width: 150px;
+    }
+
+    #cuidadospessoais img{
+        width: 150px;
+    }
+
+    #nutricao img{
+        width: 150px;
+    }
+
+    #casacozinha img{
+        width: 150px;
+    }
+
+    #livrosdiarios img{
+        width: 150px;
+    }
+
     .product-grid {
+        display: grid;
         grid-template-columns: auto auto auto;
-        gap: 5px;
+        gap: 20px;
+        max-width: 900px;
         padding: 20px;
     }
 }

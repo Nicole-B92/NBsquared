@@ -12,6 +12,7 @@ picture {
 
 section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -25,7 +26,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
@@ -139,7 +140,7 @@ header {
     top: 0;
     right:0;
     position: absolute;
-    top: 50px;
+    top: 65px;
     width: 30%;
     z-index:1;
     display: none;
@@ -202,7 +203,7 @@ header {
     grid-template-columns: auto auto auto;
     gap: 10px;
     max-width: 900px;
-    margin: 50px auto;
+    margin-top: 40px;
     padding: 20px;
 }
 
@@ -247,6 +248,49 @@ header {
 .product-button {
     vertical-align: baseline;
 }
+
+/*Nutrition section*/
+#nutrition img{
+    width: 110px;
+    justify-items: center;
+}
+
+#nutrition img:hover{
+    transform: scale(1.15);
+}
+
+.product-button {
+    vertical-align: baseline;
+}
+
+/*Home & Kitchen section*/
+#homekitchen img{
+    width: 110px;
+    justify-items: center;
+}
+
+#homekitchen img:hover{
+    transform: scale(1.15);
+}
+
+.product-button {
+    vertical-align: baseline;
+}
+
+/*Books & Journals section*/
+#booksjournals img{
+    width: 110px;
+    justify-items: center;
+}
+
+#booksjournals img:hover{
+    transform: scale(1.15);
+}
+
+.product-button {
+    vertical-align: baseline;
+}
+
 
 /* Footer */
 footer {
@@ -465,11 +509,19 @@ footer p {
         width: 150px;
     }
 
-    #beauty img{
+    #personalcare img{
         width: 150px;
     }
 
-    #personalcare img{
+    #nutrition img{
+        width: 150px;
+    }
+
+    #homekitchen img{
+        width: 150px;
+    }
+
+    #booksjournals img{
         width: 150px;
     }
 
@@ -478,7 +530,6 @@ footer p {
         grid-template-columns: auto auto auto;
         gap: 20px;
         max-width: 900px;
-        margin: 50px auto;
         padding: 20px;
     }
 }
