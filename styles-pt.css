@@ -51,7 +51,7 @@ h1 {
     font-size: 40px;
     font-weight: bold;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     line-height: 1.3;
 }
 
@@ -185,6 +185,7 @@ header {
 .inicio-texto #profile-picture {
     width: 250px;
     border-radius: 40%;
+    margin-bottom: 40px;
 }
 
 .inicio-texto {
@@ -269,15 +270,28 @@ header {
     text-align: justify;
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
 #categories {
     display: flex;
 }
 
 .category img{
-    max-width: 200px;
-    margin-top: 40px;
-    margin: 0 10 0 0;
+    width: 90px;
+    margin-top: 20px;
+    margin: 10px;
     border-radius: 40%;
+}
+
+.category img:hover{
+    border: 2px solid #F9CF04;
 }
 
 .category a{
@@ -570,5 +584,21 @@ footer p {
     #preference-modal {
     width: 40%;
     left:30%;
+    }
+
+    .category img{
+        width: 200px;
+        margin-top: 20px;
+        margin: 20px;
+        border-radius: 40%;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
     }
 }
