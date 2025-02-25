@@ -197,6 +197,10 @@ header {
     text-align: center;
 }
 
+#pele,#cabelo,#cuidadospessoais,#nutricao,#casacozinha,#livrosdiarios {
+    display: none;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -206,13 +210,13 @@ header {
     padding: 20px;
 }
 
-/*Skincare section*/
-#skincare img{
+/*Pele section*/
+#pele img{
     width: 110px;
     justify-items: center;
 }
 
-#skincare img:hover{
+#pele img:hover{
     transform: scale(1.15);
 }
 
@@ -220,13 +224,13 @@ header {
     vertical-align: baseline;
 }
 
-/*Beauty section*/
-#beauty img{
+/*Cabelo section*/
+#cabelo img{
     width: 110px;
     justify-items: center;
 }
 
-#beauty img:hover{
+#cabelo img:hover{
     transform: scale(1.15);
 }
 
@@ -234,13 +238,13 @@ header {
     vertical-align: baseline;
 }
 
-/*Haircare section*/
-#haircare img{
+/*Cuidados Pessoais section*/
+#cuidadospessoais img{
     width: 110px;
     justify-items: center;
 }
 
-#haircare img:hover{
+#cuidadospessoais img:hover{
     transform: scale(1.15);
 }
 
@@ -248,13 +252,41 @@ header {
     vertical-align: baseline;
 }
 
-/*Personal Care section*/
-#personalcare img{
+/*Nutricao section*/
+#nutricao img{
     width: 110px;
     justify-items: center;
 }
 
-#personalcare img:hover{
+#nutricao img:hover{
+    transform: scale(1.15);
+}
+
+.product-button {
+    vertical-align: baseline;
+}
+
+/*Casa & Cozinha section*/
+#casacozinha img{
+    width: 110px;
+    justify-items: center;
+}
+
+#casacozinha img:hover{
+    transform: scale(1.15);
+}
+
+.product-button {
+    vertical-align: baseline;
+}
+
+/*Livros & Diários section*/
+#livrosdiarios img{
+    width: 110px;
+    justify-items: center;
+}
+
+#livrosdiarios img:hover{
     transform: scale(1.15);
 }
 
