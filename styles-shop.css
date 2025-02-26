@@ -264,6 +264,10 @@ header {
 }
 
 /*Home & Kitchen section*/
+#homekitchen {
+    display: none;
+}
+
 #homekitchen img{
     width: 110px;
     justify-items: center;
