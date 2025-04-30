@@ -123,7 +123,7 @@ const popupClose = document.getElementById('popup-close');
 // Show popup after 8 seconds (adjust as needed)
 setTimeout(() => {
     popup.classList.remove('hidden');
-}, 2000);
+}, 1000);
 
 // Close popup on 'X' click
 popupClose.addEventListener('click', () => {
