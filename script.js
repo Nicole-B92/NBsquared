@@ -114,3 +114,25 @@ savePreferencesButton.addEventListener('click', () => {
 
 // Show the cookie banner on page load
 showCookieBanner();
+
+// Popup Functionality
+const popup = document.getElementById('custom-popup');
+const popupClose = document.getElementById('popup-close');
+
+
+// Show popup after 8 seconds (adjust as needed)
+setTimeout(() => {
+    popup.classList.remove('hidden');
+}, 2000);
+
+// Close popup on 'X' click
+popupClose.addEventListener('click', () => {
+    popup.classList.add('hidden');
+});
+
+// Optional: Close popup if clicking outside the popup inner box
+popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.classList.add('hidden');
+    }
+});
