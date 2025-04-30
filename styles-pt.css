@@ -621,7 +621,7 @@ p {
     margin-bottom: 20px;
 }
 
-.popup-inner button {
+.popup-inner a {
     padding: 10px;
     background-color: #000000;
     color: #F9CF04;
