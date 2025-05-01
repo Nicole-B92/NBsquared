@@ -1,138 +1,121 @@
-// Mobile menu toggle
+// ======================
+// MOBILE MENU TOGGLE
+// ======================
 function toggleMenu() {
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    if (mobileMenu.style.display === "block") {
-    mobileMenu.style.display = "none";
-    } else {
-    mobileMenu.style.display = "block";
-    }
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
 }
 
-  // Close mobile menu on link click
 function closeMenu() {
-    document.getElementById("mobile-menu").style.display = "none";
+  document.getElementById("mobile-menu").style.display = "none";
 }
 
-  // Cookie popup
-function allConsentGranted() {
-    document.getElementById("cookie-popup").style.display = "none";
-}
-
-function allConsentDenied() {
-    document.getElementById("cookie-popup").style.display = "none";
-}
-
-// Cookie banner
+// ======================
+// COOKIE CONSENT LOGIC
+// ======================
 const cookieBanner = document.getElementById('cookie-banner');
 const managePreferencesButton = document.getElementById('customise');
 const acceptAllButton = document.getElementById('accept-all');
 const acceptAllButtonInModal = document.getElementById("preference-accept-all");
-const preferenceModal = document.getElementById('preference-modal');
 const savePreferencesButton = document.getElementById('save-preferences');
+const preferenceModal = document.getElementById('preference-modal');
 
-if (localStorage.getItem('cookieBannerDismissed') !== 'true') {
-  showCookieBanner(); 
+function applyConsent(consent) {
+  gtag('consent', 'update', consent);
+  localStorage.setItem('consentMode', JSON.stringify(consent));
+
+  if (consent.analytics_storage === 'granted') {
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-CN32FTXPEP';
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = () => {
+          gtag('js', new Date());
+          gtag('config', 'G-CN32FTXPEP');
+      };
+  }
 }
 
-// Function to show the cookie banner
+function acceptAllCookies() {
+  const consent = {
+      ad_storage: 'granted',
+      analytics_storage: 'granted',
+      personalization_storage: 'granted',
+      functionality_storage: 'granted',
+      security_storage: 'granted'
+  };
+  applyConsent(consent);
+  localStorage.setItem('cookieConsentGiven', 'true');
+  cookieBanner.style.display = 'none';
+  preferenceModal.style.display = 'none';
+}
+
+function saveCustomPreferences() {
+  const consent = {
+      ad_storage: document.getElementById('targeting').checked ? 'granted' : 'denied',
+      analytics_storage: document.getElementById('performance').checked ? 'granted' : 'denied',
+      personalization_storage: 'denied',
+      functionality_storage: document.getElementById('functional').checked ? 'granted' : 'denied',
+      security_storage: 'granted'
+  };
+  applyConsent(consent);
+  localStorage.setItem('cookieConsentGiven', 'true');
+  preferenceModal.style.display = 'none';
+  cookieBanner.style.display = 'none';
+}
+
 function showCookieBanner() {
   cookieBanner.style.display = 'flex';
-  localStorage.setItem('cookieBannerDismissed', 'true'); 
 }
 
-// Function to show the preference modal
 function showPreferenceModal() {
   preferenceModal.style.display = 'flex';
-  cookieBanner.style.display = 'none'; // Hide the banner
-  localStorage.setItem('cookieBannerDismissed', 'true'); 
+  cookieBanner.style.display = 'none';
 }
 
-// Function to hide the preference modal
 function hidePreferenceModal() {
   preferenceModal.style.display = 'none';
-  localStorage.setItem('cookieBannerDismissed', 'true'); 
 }
 
-// Function to handle cookie acceptance (replace with your actual cookie logic)
-function acceptCookies() {
-  if (event.target === acceptAllButtonInModal) {
-  // Set cookies (replace with your actual cookie logic)
-  document.cookie = 'performance=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  document.cookie = 'functional=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  document.cookie = 'targeting=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
+// ✅ Load preferences and control banner after DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  const savedConsent = localStorage.getItem('consentMode');
+  const consentGiven = localStorage.getItem('cookieConsentGiven') === 'true';
 
-  // Hide the cookie banner
-  cookieBanner.style.display = 'none';
-  preferenceModal.style.display = 'none';
-  }
-}
-
-function acceptCookies() {
-  // Set cookies (replace with your actual cookie logic)
-  document.cookie = 'performance=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  document.cookie = 'functional=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  document.cookie = 'targeting=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-
-  // Hide the cookie banner
-  cookieBanner.style.display = 'none';
-  preferenceModal.style.display = 'none';
-}
-
-// Event listeners
-managePreferencesButton.addEventListener('click', showPreferenceModal);
-acceptAllButton.addEventListener('click', acceptCookies);
-acceptAllButtonInModal.addEventListener("click", acceptCookies); 
-savePreferencesButton.addEventListener('click', () => {
-  // Get user preferences
-  const performanceCookie = document.getElementById('performance').checked;
-  const functionalCookie = document.getElementById('functional').checked;
-  const targetingCookie = document.getElementById('targeting').checked;
-
-  // Set cookies based on user preferences (replace with your actual cookie logic)
-  if (performanceCookie) {
-    document.cookie = 'performance=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
+  if (savedConsent && consentGiven) {
+      applyConsent(JSON.parse(savedConsent));
+      cookieBanner.style.display = 'none';
   } else {
-    document.cookie = 'performance=false; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
+      showCookieBanner();
   }
-  if (functionalCookie) {
-    document.cookie = 'functional=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  } else {
-    document.cookie = 'functional=false; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  }
-  if (targetingCookie) {
-    document.cookie = 'targeting=true; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  } else {
-    document.cookie = 'targeting=false; expires=Thu, 18 Dec 2043 10:30:00 UTC; path=/;';
-  }
-
-  // Hide the preference modal
-  hidePreferenceModal();
-  // Hide the cookie banner
-  cookieBanner.style.display = 'none';
 });
 
-// Show the cookie banner on page load
-showCookieBanner();
+// Event Listeners
+managePreferencesButton.addEventListener('click', showPreferenceModal);
+acceptAllButton.addEventListener('click', acceptAllCookies);
+acceptAllButtonInModal.addEventListener("click", acceptAllCookies);
+savePreferencesButton.addEventListener('click', saveCustomPreferences);
 
-// Popup Functionality
+// ======================
+// POPUP FUNCTIONALITY
+// ======================
 const popup = document.getElementById('custom-popup');
 const popupClose = document.getElementById('popup-close');
 
-
-// Show popup after 8 seconds (adjust as needed)
-setTimeout(() => {
-    popup.classList.remove('hidden');
-}, 1000);
+// Show popup immediately after DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  popup.classList.remove('hidden');
+});
 
 // Close popup on 'X' click
 popupClose.addEventListener('click', () => {
-    popup.classList.add('hidden');
+  popup.classList.add('hidden');
 });
 
-// Optional: Close popup if clicking outside the popup inner box
+// Close popup if clicking outside the popup content
 popup.addEventListener('click', (e) => {
-    if (e.target === popup) {
-        popup.classList.add('hidden');
-    }
+  if (e.target === popup) {
+      popup.classList.add('hidden');
+  }
 });
