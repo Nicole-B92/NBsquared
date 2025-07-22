@@ -103,9 +103,14 @@ savePreferencesButton.addEventListener('click', saveCustomPreferences);
 const popup = document.getElementById('custom-popup');
 const popupClose = document.getElementById('popup-close');
 
-// Show popup immediately after DOM is ready
+// Show popup only once per session
 document.addEventListener('DOMContentLoaded', () => {
-  popup.classList.remove('hidden');
+  const popupShown = sessionStorage.getItem('popupShown');
+
+  if (!popupShown) {
+    popup.classList.remove('hidden');
+    sessionStorage.setItem('popupShown', 'true');
+  }
 });
 
 // Close popup on 'X' click
@@ -116,6 +121,6 @@ popupClose.addEventListener('click', () => {
 // Close popup if clicking outside the popup content
 popup.addEventListener('click', (e) => {
   if (e.target === popup) {
-      popup.classList.add('hidden');
+    popup.classList.add('hidden');
   }
 });
