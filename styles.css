@@ -366,6 +366,20 @@ header {
     transform: scale(1.25);
 }
 
+button#free-call{
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding:10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+button#free-call a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     background-color: #F9CF04;
@@ -689,8 +703,12 @@ p {
         gap: 5px;
         padding: 20px;
     }
-}
 
-.popup-inner {
-    max-width: 400px;
+    .popup-inner {
+        max-width: 400px;
+    }
+
+    button#free-call{
+        font-size: 20px;
+    }
 }
