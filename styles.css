@@ -82,6 +82,15 @@ p {
     margin-bottom: 15px;
 }
 
+#purpose-1 { 
+    margin-bottom: 0px;
+}
+
+#purpose { 
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 header {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -211,6 +220,16 @@ header {
     width:fit-content;
     padding: 7px 10px 10px 10px;
     text-align: center;
+}
+
+button#free-call-1{
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding:10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 /* About section */
@@ -710,6 +729,10 @@ p {
     }
 
     button#free-call{
+        font-size: 20px;
+    }
+
+    button#free-call-1{
         font-size: 20px;
     }
 }
