@@ -232,6 +232,11 @@ button#free-call-1{
     margin-top: 10px;
 }
 
+button#free-call-1 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
 /* About section */
 #about {
     flex-wrap: wrap;
