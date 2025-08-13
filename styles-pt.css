@@ -82,6 +82,15 @@ p {
     margin-bottom: 20px;
 }
 
+#purpose-1 { 
+    margin-bottom: 0px;
+}
+
+#purpose { 
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 header {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
