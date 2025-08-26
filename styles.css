@@ -283,6 +283,7 @@ button#free-call-1 a:hover{
 
 /*Shop section*/
 #shop {
+    display: none;
     flex-direction: column;
     min-height: 90vh;
     background-color: #fefff1;
