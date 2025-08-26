@@ -217,7 +217,7 @@ header {
     text-align: center;
     transition: transform 0.3s ease;
     height: fit-content;
-    width: 330px;
+    width: auto;
 }
 
 .services-button {
