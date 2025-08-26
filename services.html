@@ -19,7 +19,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBsquared | Life & Health Coaching</title>
+    <title>Services — NBsquared | Life & Health Coaching</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./Images/bee-t.ico" type="image/x-icon">
@@ -51,7 +51,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- CSS external file -->
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles-services.css">
 </head>
 
 <body>
@@ -68,8 +68,8 @@
             </div>
 
             <div class="menu">
-                <a href="#home" title="Home"><b>Home</b></a>
-                <a href="#about" title="About"><b>About</b></a>
+                <a href="/index.html#home" title="Home"><b>Home</b></a>
+                <a href="/index.html#about" title="About"><b>About</b></a>
                 <a href="/services.html" title="Services"><b>Services</b></a>
                 <a href="#contact" title="Contact"><b>Contact</b></a>
             </div>
@@ -87,132 +87,52 @@
         </nav>
 
         <div id="mobile-menu" class="mobile-menu">
-            <a href="#home" onclick="closeMenu()">Home</a>
-            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="/index.html#home" onclick="closeMenu()">Home</a>
+            <a href="/index.html#about" onclick="closeMenu()">About</a>
             <a href="/services.html" onclick="closeMenu()">Services</a>
             <a href="#contact" onclick="closeMenu()">Contact</a>
         </div>
     </header>
 
-    <!-- Pop Up -->
-    <div id="custom-popup" class="popup hidden">
-        <div class="popup-inner">
-            <span class="popup-close" id="popup-close">&times;</span>
-            <img src="/Images/ikigai-ebook-en.webp" alt="Find your Ikigai eBook" id="ikigai-ebook-cover" title="Find your Ikigai ebook cover">
-            <h2>FREE eBook!</h2>
-            <h3>'Find your Ikigai: <i>Discover your true purpose and live with meaning’</i></h3>
-            <p>Join our community and start your journey, now!</p>
-            <a class="ebook" href="https://nbsquared.kit.com/ikigai-ebook-en" target="_blank">Access the eBook</a>
-        </div>
-    </div>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="home-text">
-            <img src="/Images/nicole-b.webp" alt="Profile Picture" id="profile-picture" title="Nicole B.">
-            <h1>Hello! <br> It's me, Nicole B<span class="dot">.</span></h1>
-            <p>I am a global citizen, entrepreneur, and International Life & Health Coach bringing a wealth of multicultural experience to my work.</p>
-            <p>I empower health-conscious men and women worldwide to rebuild their confidence and wellbeing without relying on "quick fixes", fad diets, or wellness extremes.</p>
-            <p>My 1:1 coaching programmes blend science-backed knowledge with intentional low-tox lifestyle shifts that align mind, body, and soul.</p>
-            <p>Having overcome my own health challenges, I combine expertise with lived experience to offer a warm, honest, and results-driven coaching approach that empowers you to achieve lasting, positive transformation.</p>
-            <p>Are you ready to feel amazing in your own skin?</p>
-            <button id="free-call-1"><b><a href="https://calendly.com/nicolebadotti/discovery-call" target="_blank" title="Book Your FREE Discovery Call Now">Book Your FREE Discovery Call Now!</a></b></button>
+    <!-- Service Section -->
+    <section id="services">
+        <div id="services-text">
+            <h1>Our Services<span class="dot">.</span></h1>
+            <p>Everything I offer is designed to help you reconnect with yourself and your environment, empowering you to feel amazing in your own skin, mind, body, and soul.</p>
         </div>
     </section>
 
-    <!-- About section -->
-    <section id="about">
-        <div class="about-text">
-            <h2>About</h2>
-            <p>Since childhood, I’ve faced ongoing health challenges that affected my self-esteem and led to years of searching for answers. </p>
-            <p>Over time, I became more aware of hidden toxins in everyday products, from the cosmetics we use to the food we eat and even the fabrics we wear, which inspired me to change my habits and reduce exposure to harmful substances.</p>
-            <p>While some conditions persist, I’ve learned how to manage them through intentional lifestyle shifts. My journey is proof that small, consistent actions, supported by awareness and community, can lead to lasting wellbeing.</p>
-            <p>Now, I share my story and knowledge to inspire and support others on their journey to a healthier, happier life.</p>
+    <section id="services-list">
+        <div class="service-card">
+            <h2>1:1 Coaching</h2>
+            <p>Personalised 1:1 sessions tailored to your unique challenges and lifestyle.</p>
+            <a class="services-button" href="#contact" class="cta-button">Book a discovery call</a>
         </div>
 
-        <div class="about-box">
-            <h3>Purpose</h3>
-            <p id="purpose-1">To inspire and empower you to live a healthier, happier life</p>
-            <p id="purpose">by helping you reconnect with yourself and your environment, so you feel amazing in your own skin (in every sense of the word!)</p>
-            <h3>Vision</h3>
-            <p>To inspire a global shift towards conscious, toxin-aware living, making lifelong wellbeing accessible to all.</p>
-            <h3>Core Values</h3>
-            <ul>
-                <li>Integrity</li>
-                <li>Wellbeing</li>
-                <li>Positivity</li>
-                <li>Longevity</li>
-            </ul>
-        </div>
-    </section>
-
-<!-- Shop section -->
-    <section id="shop">
-        <div class="shop-text">
-            <h2>Shop</h2>
-            <p>I believe knowledge is power, and my goal is to empower you to feel your best in your own skin through informed choices. Here, you’ll find products and brands I believe in and the products that have been truly making a difference in my life!</p>
-            <p>I choose carefully each product I share to ensure it meets the high standards I hold for both you and me. With every purchase you make through my website, you help me continue discovering and curating a selection of better, cleaner products that saves you precious time and energy.</p>
+        <div class="service-card">
+            <h2>Group Coaching</h2>
+            <p>Empowering group sessions that blend community and accountability.</p>
+            <a class="services-button" href="#contact" class="cta-button">Join the next round</a>
         </div>
 
-        <div id="categories">
-            <div class="product-grid">
+        <div class="service-card">
+            <h2>Workshops & Events</h2>
+            <p>Immersive experiences exploring diverse themes in holistic wellbeing.</p>
+            <a class="services-button" href="#contact" class="cta-button">Explore upcoming events</a>
+        </div>
 
-                <div class="category">
-                    <a href="/shop.html#skincare" target="_blank">
-                    <img src="/Categories/skincare.webp" alt="Skincare"></a>
-                    <div class="category-button">
-                    <a class="button-category" href="/shop.html#skincare" target="_blank">Skincare</a>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <a href="/shop.html#haircare" target="_blank">
-                    <img src="/Categories/haircare.webp" alt="Haircare"></a>
-                    <div class="category-button">
-                    <a class="button-category" href="/shop.html#haircare" target="_blank">Haircare</a>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <a href="/shop.html#personalcare" target="_blank">
-                    <img src="/Categories/personalcare.webp" alt="Personal Care"></a>
-                    <div class="category-button">
-                    <a class="button-category" href="/shop.html#personalcare" target="_blank">Personal Care</a>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <a href="/shop.html#nutrition" target="_blank">
-                    <img src="/Categories/nutrition.webp" alt="Nutrition"></a>
-                    <div class="category-button">
-                    <a class="button-category" href="/shop.html#nutrition" target="_blank">Nutrition</a>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <a href="/shop.html#homekitchen" target="_blank">
-                    <img src="/Categories/homekitchen.webp" alt="Home & Kitchen"></a>
-                    <div class="category-button">
-                    <a class="button-category" href="/shop.html#homekitchen" target="_blank">Home & Kitchen</a>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <a href="/shop.html#booksjournals" target="_blank">
-                    <img src="/Categories/books.webp" alt="Books & Journals"></a>
-                    <div class="category-button">
-                    <a class="button-category" href="/shop.html#booksjournals" target="_blank">Books & Journals</a>
-                    </div>
-                </div>
-            </div>
+        <div class="service-card">
+            <h2>Digital Resources</h2>
+            <p>Practical tools to help you take aligned action, wherever you are in your journey.</p>
+            <a class="services-button" href="/resources.html" class="cta-button">Browse resources</a>
         </div>
     </section>
 
     <!-- Contact section -->
     <section id="contact">
         <div class="contact-us">
-            <h2>Get in touch!</h2>
-            <p>For all general enquiries, please email:</p>
+            <h2>Not sure where to start? Let’s talk!</h2>
+            <p id="help"> I’ll help you find the best next step for your needs and goals.</p>
             <p><a href="mailto:info@nbsquared.co.uk" title="info@nbsquared.co.uk"><b>info@nbsquared.co.uk</b></a>
             <p><a href="https://wa.me/+4407494480448" title="mobile"><b>+44 (0) 7494 480 448</b></a>
         </div>
