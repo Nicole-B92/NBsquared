@@ -189,7 +189,7 @@ header {
     padding-bottom: 10px;
 }
 
-#services-text {
+.services-text {
     display: flex;
     justify-self: center;
     align-items: center;
@@ -234,6 +234,42 @@ header {
 .services-button:hover{
     color: black;
     text-decoration: underline;
+}
+
+/*Why section*/
+#why {
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #fafafa;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.why-text {
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.why-box {
+    width: 650px;
+    border: 2px solid #F9CF04;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.why-box p {
+    font-size: 17px;
+    margin: 8px 0;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*Contact section*/
