@@ -699,4 +699,14 @@ p {
     height: 180px;
     width: 400px;
     } 
+
+    .why-box {
+    width: 650px;
+    border: 2px solid #F9CF04;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    }
 }
