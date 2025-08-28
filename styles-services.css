@@ -237,7 +237,7 @@ header {
 }
 
 /*Why section*/
-#why {
+#why { 
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
