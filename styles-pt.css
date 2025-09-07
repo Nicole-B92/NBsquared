@@ -47,7 +47,7 @@ a:hover {
 }
 
 body {
-    font-family: "Instrumental Sans", sans-serif;
+    font-family: "Instrument Sans", sans-serif;
     font-size: 16px;
 }
 
@@ -221,6 +221,21 @@ header {
     padding: 7px 10px 10px 10px;
     text-align: center;
     max-width: none;
+}
+
+button#servicos{
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding:10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button#servicos a:hover{
+    color: black;
+    text-decoration: underline;
 }
 
 /* About section */
@@ -757,5 +772,10 @@ p {
         margin-left: 20px;
         margin-right: 20px;
         text-align: center;
+    }
+
+
+    button#servicos{
+        font-size: 20px;
     }
 }
