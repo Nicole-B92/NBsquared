@@ -82,13 +82,8 @@ p {
     margin-bottom: 15px;
 }
 
-#purpose-1 { 
-    margin-bottom: 0px;
-}
-
 #purpose { 
-    padding-top: 0px;
-    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 header {
